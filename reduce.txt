@@ -1,0 +1,9 @@
+(^x.xy)(^u.vuu)
+(^xy.yx)uv
+(^x.x(x(yz))x)(^u.uv)
+(^x.xxy)(^y.yz)
+(^xy.xyy)(^u.uyx)
+(^xyz.xz(yz))((^xy.yx)u)((^xy.yx)v)w
+
+(^xyz.xzy)(^xy.x)
+(^xy.x)(^x.x)

@@ -1,4 +1,4 @@
-// Generated from lambda.g4 by ANTLR 4.7.1
+// Generated from ./lambda.g4 by ANTLR 4.7.1
 package com.wangdxh;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
