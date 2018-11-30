@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e22f9b9-631c-4771-bc0a-f7c5647901af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/freevariables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/fullformat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/subst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/onereduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/onereduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/singlearg.java" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/singlearg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/undecidable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/undecidable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/subst.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/lambda/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,20 +53,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="261" column="78" lean-forward="true" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="78" />
+            <state relative-caret-position="171">
+              <caret line="255" column="34" lean-forward="true" selection-start-line="255" selection-start-column="34" selection-end-line="255" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/subst.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -310,33 +294,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wangdxh" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wangdxh" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="lambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wangdxh" type="462c0819:PsiDirectoryNode" />
-              <item name="onereduce.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="lambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wangdxh" type="462c0819:PsiDirectoryNode" />
-              <item name="subst" type="1a9f42e2:ClassTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -344,7 +301,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543571158714" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543571434272" />
     <property name="settings.editor.selected.configurable" value="project.validation" />
   </component>
   <component name="RecentsManager">
@@ -409,12 +366,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23278688" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23278688" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30491802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.30491802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
@@ -582,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/subst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/onereduce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -601,10 +551,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/subst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lambda/src/main/java/com/wangdxh/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="261" column="78" lean-forward="true" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="78" />
+        <state relative-caret-position="171">
+          <caret line="255" column="34" lean-forward="true" selection-start-line="255" selection-start-column="34" selection-end-line="255" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
