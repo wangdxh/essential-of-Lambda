@@ -1,0 +1,9 @@
+[(uv)/x](^y.x(^w.vwx))
+[(^y.xy)/x] (^y.x(^x.x))
+[(^y.vy)/x] (y(^v.xv))
+[(uv)/x](^x.zy)
+
+[(^z.zwvy)/x] (^y.yx(^y.xvy))y
+[(^z.zwvy)/x] (^y.yx(^x.xvy))y
+[(^z.zwvy)/x] (^x.xv(^y.xvy))y
+[(^z.zwvy)/x] (^x.xv(^x.xvy))y

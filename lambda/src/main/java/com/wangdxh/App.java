@@ -77,43 +77,11 @@ public class App
                 // subitem
                 String[] def = item.split("=");
                 String left = def[0].trim(), right = def[1].trim();
-                StringBuilder build = new StringBuilder();
-                for(int i = 0; i < right.length(); i++)
-                {
-                    String strchar = String.valueOf(right.charAt(i));
-                    boolean find = false;
-                    for(int definx = definelist.size()-1; definx >= 0; definx--){
-                        if (strchar.indexOf(definelist.get(definx).getKey()) != -1){
-                            build.append(definelist.get(definx).getValue());
-                            find = true;
-                            break;
-                        }
-                    }
-                    if (find == false){
-                        build.append(strchar);
-                    }
-                }
-                definelist.add(new Pair<>(left, build.toString()));
+                definelist.add(new Pair<>(left, App.strsubstitufromdefinelist(right, definelist)));
                 continue;
             }
             else{
-                StringBuilder build = new StringBuilder();
-                for(int i = 0; i < item.length(); i++)
-                {
-                    String strchar = String.valueOf(item.charAt(i));
-                    boolean find = false;
-                    for(int definx = definelist.size()-1; definx >= 0; definx--){
-                        if (strchar.indexOf(definelist.get(definx).getKey()) != -1){
-                            build.append(definelist.get(definx).getValue());
-                            find = true;
-                            break;
-                        }
-                    }
-                    if (find == false){
-                        build.append(strchar);
-                    }
-                }
-                strreduce = build.toString();
+                strreduce = App.strsubstitufromdefinelist(item, definelist);
             }
             if (strreduce.trim().length() == 0){
                 continue;
@@ -123,7 +91,7 @@ public class App
             strreduce = dosingleargs(strreduce);
 
             List<String> retlist = new ArrayList<>();
-            for (int i = 0; i < 50000; i++){
+            for (int i = 0; i < 300; i++){
                 String strafterpaire = singlepair.convertString(strreduce);
                 retlist.add(strafterpaire);
 
@@ -162,6 +130,35 @@ public class App
         return visitor.ctxtofreedict;
     }
 
+    public static void main( String[] args )
+    {
+        if (args.length >= 2 ){
+            if (args[0].equals("doonereduce")){
+                // err output do not change
+                System.err.print(App.doonereduce(getstrfromarg(args[1])));
+                return;
+            }
+            else if (args[0].equals("subst")){
+                App.dosubst(getstrfromarg(args[1]));
+                return;
+            }
+            else if (args[0].equals("fullformat")){
+                App.docommand(fullformat.class, getstrfromarg(args[1]));
+                return;
+            }
+            else if (args[0].equals("freevariables")){
+                App.docommand(freevariables.class, getstrfromarg(args[1]));
+                return;
+            }
+
+        }
+        if (args.length == 1){
+            // 如果是文件读取数据进行reduce，如果不是直接reduce
+            App.doreduce(getstrfromarg(args[0]));
+        }
+    }
+
+
     public  static String getstrfromarg(String arg){
         File file = new File(arg);
         if (file.exists()){
@@ -192,17 +189,80 @@ public class App
 
         return arg;
     }
-    public static void main( String[] args )
+
+    private static String strsubstitufromdefinelist(String strleft, List<Pair<String, String>> definelist)
     {
-        if (args.length >= 2 ){
-            if (args[0].equals("doonereduce")){
-                System.err.print((App.doonereduce(getstrfromarg(args[1]))));
-                return;
+        StringBuilder build = new StringBuilder();
+        for(int i = 0; i < strleft.length(); i++)
+        {
+            String strchar = String.valueOf(strleft.charAt(i));
+            boolean find = false;
+            for(int definx = definelist.size()-1; definx >= 0; definx--){
+                if (strchar.indexOf(definelist.get(definx).getKey()) != -1){
+                    build.append(definelist.get(definx).getValue());
+                    find = true;
+                    break;
+                }
+            }
+            if (find == false){
+                build.append(strchar);
             }
         }
-        if (args.length == 1){
-            // 如果是文件读取数据进行reduce，如果不是直接reduce
-            App.doreduce(getstrfromarg(args[0]));
+        return build.toString();
+    }
+
+    public static void docommand(Class<?> T, String input)
+    {
+        Class a = fullformat.class;
+        CharStream stream = new ANTLRInputStream(input);
+        TokenSource lexer = new lambdaLexer(stream);
+
+        CommonTokenStream tokenStream = new CommonTokenStream(lexer);
+        lambdaParser parser = new lambdaParser(tokenStream);
+
+        //fullformat visitor = new fullformat();
+
+        lambdaBaseVisitor visitor = null;
+        try
+        {
+            visitor = (lambdaBaseVisitor)T.newInstance();
+        }
+        catch (InstantiationException e)
+        {
+            e.printStackTrace();
+        }
+        catch (IllegalAccessException e)
+        {
+            e.printStackTrace();
+        }
+        visitor.visit(parser.program());
+        return;
+    }
+    public static void dosubst(String input)
+    {
+        List<Pair<String, List<String>>> retmap = new ArrayList<>();
+        List<Pair<String, String>> definelist = new ArrayList<>();
+
+        for (String item :input.split("\n"))
+        {
+            item = item.trim();
+            if (item.indexOf("[") != -1 && item.indexOf("]") != -1 && item.indexOf("/") != -1)
+            {
+                String[] i = item.split("\\[|\\]|/");
+
+                StringBuilder build = new StringBuilder();
+                build.append("(^");
+                build.append(i[2]);
+                build.append(".");
+                build.append(i[3]);
+                build.append(")");
+                build.append(i[1]);
+                String strreduce = build.toString();
+                System.out.println(item);
+                System.out.println("to:" + App.doonereduce(strreduce) + "\n");
+
+            }
         }
     }
+
 }

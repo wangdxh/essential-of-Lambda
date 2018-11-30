@@ -1,28 +1,15 @@
-I = (^x.x)
+
 K = (^xy.x)
-S = (^xyz.xz(yz))
-B = (^xyz.x(yz))
-B' = (^xyz.y(xz))
-C = (^xyz.xzy)
-W = (^xy.xyy)
-
 D = (^xyz.z(Ky)x)
-
 Z = (^xy.y)
 O = (^xy.xy)
-T = (^xy.(x(x(xy))))
-F = (^xy.(x(x(x(xy)))))
-
-P = (^mnxy.mx(nxy))
-Q = (^uxy.x(uxy))
-A = (^nxy.n(^gh.h(gx))(^u.y)(^u.u))
-AZ
-AO
 
 V = (^y.x(yy))
 Y = (^x.VV)
 
-Y(^uxyz.Dx(yz(uxy(Az)))z)ZPF
+J = DBA(F[J])
+H = (^y.DBA(F(Ty(Ny))))
+J = H[H]
 
 
 

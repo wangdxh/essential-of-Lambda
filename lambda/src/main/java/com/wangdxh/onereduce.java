@@ -35,12 +35,11 @@ public class onereduce extends lambdaBaseVisitor<String>
     }
 
     String strletter;
-    char m_lastnewvar = 'a';
     private String newVar()
     {
-        for(char i = m_lastnewvar; i < 'z'; i++){
+        for(char i = 'a'; i < 'z'; i++){
             if (-1 == strletter.indexOf(i)){
-                m_lastnewvar = i;
+                strletter += i;
                 return String.valueOf(i);
             }
         }
