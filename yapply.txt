@@ -1,0 +1,28 @@
+Z = (^xy.y)
+O = (^xy.xy)
+T = (^xy.(x(x(xy))))
+F = (^xy.(x(x(x(xy)))))
+
+K = (^xy.x)
+D = (^xyz.z(Ky)x)
+
+
+P = (^mnxy.mx(nxy))
+
+
+Q = (^uxy.x(uxy))
+
+
+A = (^nxy.n(^gh.h(gx))(^u.y)(^u.u))
+
+
+
+V = (^y.x(yy))
+Y = (^x.VV)
+
+Y(^uxyz.Dx(yz(uxy(Az)))z)ZPF
+
+
+
+
+

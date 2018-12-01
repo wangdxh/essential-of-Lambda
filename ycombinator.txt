@@ -6,25 +6,18 @@ B' = (^xyz.y(xz))
 C = (^xyz.xzy)
 W = (^xy.xyy)
 
-D = (^xyz.z(Ky)x)
-
-Z = (^xy.y)
-O = (^xy.xy)
-T = (^xy.(x(x(xy))))
-F = (^xy.(x(x(x(xy)))))
-
-P = (^mnxy.mx(nxy))
-Q = (^uxy.x(uxy))
-A = (^nxy.n(^gh.h(gx))(^u.y)(^u.u))
-AZ
-AO
+U= (^ux.x(uux))
+Y=UU
+Yx
 
 V = (^y.x(yy))
-Y = (^x.VV)
+A = (^x.VV)
+Ax
 
-Y(^uxyz.Dx(yz(uxy(Az)))z)ZPF
+E = WS(BWB)
+E
+Ex
 
-
-
-
-
+F = WI(B(SI)(WI))
+F
+Fx
