@@ -1,0 +1,23 @@
+I = (^x.x)
+K = (^xy.x)
+S = (^xyz.xz(yz))
+B = (^xyz.x(yz))
+B' = (^xyz.y(xz))
+C = (^xyz.xzy)
+W = (^xy.xyy)
+
+U= (^ux.x(uux))
+Y=UU
+Yx
+
+V = (^y.x(yy))
+A = (^x.VV)
+Ax
+
+E = WS(BWB)
+E
+Ex
+
+F = WI(B(SI)(WI))
+F
+Fx

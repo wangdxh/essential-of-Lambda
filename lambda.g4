@@ -3,9 +3,9 @@ program
     : stat+
     ;
 stat
-    : define NEWLINE          # definestat
-    | substitution NEWLINE    # substat
-    | expression NEWLINE      # exprstat
+    : define NEWLINE?          # definestat
+    | substitution NEWLINE?    # substat
+    | expression NEWLINE?      # exprstat
     | NEWLINE                 # blankstat
     ;
 

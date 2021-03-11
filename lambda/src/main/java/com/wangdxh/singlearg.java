@@ -25,8 +25,9 @@ public class singlearg extends lambdaBaseVisitor<String>
     @Override
     public String visitExprstat(lambdaParser.ExprstatContext ctx)
     {
-        //return super.visitExprstat(ctx);
-        return this.visit(ctx.expression());
+        String strret = this.visit(ctx.expression());
+        //System.out.println(ctx.getText() + " : " + strret);
+        return strret;
     }
 
     @Override

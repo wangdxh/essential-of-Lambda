@@ -1,0 +1,8 @@
+abcdef
+xyz(yx)
+(^u.vuu)zy
+^x.uxy
+ux(yz)(^v.vy)
+^u.u(^x.y)
+(^xyz.xz(yz))uvw
+(^xy.xyy)(^u.uyx)

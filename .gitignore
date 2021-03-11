@@ -58,3 +58,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.jar
+*.bak
+*.tokens
+*.interp
